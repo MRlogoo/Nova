@@ -1,0 +1,109 @@
+﻿
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دوره‌های آموزشی | NOVA</title>
+  <link rel="stylesheet" href="cstyle.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">NOVA</a>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a class="active" href="courses.html">دوره‌ها</a>
+      <a href="shop.html">فروشگاه</a>
+    </nav>
+    <div class="header-actions">
+      <a href="login.html">ورود</a>
+      <a class="btn" href="register.html">ثبت‌نام</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-heading">
+      <span class="eyebrow">یادگیری را شروع کن</span>
+      <h1>دوره‌های آموزشی NOVA</h1>
+      <p>مهارت‌های جدید یاد بگیر و قدم بعدی مسیرت را بساز.</p>
+    </section>
+
+    <section class="filters">
+      <input id="courseSearch" type="search" placeholder="جست‌وجوی دوره...">
+      <select id="courseCategory">
+        <option value="all">همه دسته‌ها</option>
+        <option value="programming">برنامه‌نویسی</option>
+        <option value="design">طراحی</option>
+        <option value="language">زبان</option>
+        <option value="business">کسب‌وکار</option>
+      </select>
+    </section>
+
+    <section class="card-grid" id="courseGrid">
+      <article class="item-card" data-category="programming">
+        <div class="item-cover">💻</div>
+        <div class="item-content">
+          <span class="tag">برنامه‌نویسی</span>
+          <h3>آموزش HTML و CSS</h3>
+          <p>ساخت اولین وب‌سایت از پایه تا اجرا.</p>
+          <div class="item-footer"><strong>۴۹۰٬۰۰۰ تومان</strong><a href="course-details.html">مشاهده دوره</a></div>
+        </div>
+      </article>
+
+      <article class="item-card" data-category="programming">
+        <div class="item-cover">⚡</div>
+        <div class="item-content">
+          <span class="tag">برنامه‌نویسی</span>
+          <h3>جاوااسکریپت مقدماتی</h3>
+          <p>با اصول برنامه‌نویسی وب آشنا شو.</p>
+          <div class="item-footer"><strong>۵۹۰٬۰۰۰ تومان</strong><a href="course-details.html">مشاهده دوره</a></div>
+        </div>
+      </article>
+
+      <article class="item-card" data-category="design">
+        <div class="item-cover">🎨</div>
+        <div class="item-content">
+          <span class="tag">طراحی</span>
+          <h3>اصول طراحی رابط کاربری</h3>
+          <p>طراحی صفحات زیبا و کاربردی.</p>
+          <div class="item-footer"><strong>۶۵۰٬۰۰۰ تومان</strong><a href="course-details.html">مشاهده دوره</a></div>
+        </div>
+      </article>
+
+      <article class="item-card" data-category="language">
+        <div class="item-cover">🌍</div>
+        <div class="item-content">
+          <span class="tag">زبان</span>
+          <h3>انگلیسی از پایه</h3>
+          <p>تقویت واژگان و مکالمه روزمره.</p>
+          <div class="item-footer"><strong>۳۹۰٬۰۰۰ تومان</strong><a href="course-details.html">مشاهده دوره</a></div>
+        </div>
+      </article>
+
+      <article class="item-card" data-category="business">
+        <div class="item-cover">📈</div>
+        <div class="item-content">
+          <span class="tag">کسب‌وکار</span>
+          <h3>مبانی بازاریابی دیجیتال</h3>
+          <p>با مفاهیم بازاریابی آنلاین آشنا شو.</p>
+          <div class="item-footer"><strong>۵۵۰٬۰۰۰ تومان</strong><a href="course-details.html">مشاهده دوره</a></div>
+        </div>
+      </article>
+
+      <article class="item-card" data-category="design">
+        <div class="item-cover">✏️</div>
+        <div class="item-content">
+          <span class="tag">طراحی</span>
+          <h3>مبانی گرافیک</h3>
+          <p>اصول رنگ، ترکیب‌بندی و تایپوگرافی.</p>
+          <div class="item-footer"><strong>۴۵۰٬۰۰۰ تومان</strong><a href="course-details.html">مشاهده دوره</a></div>
+        </div>
+      </article>
+    </section>
+    <p id="emptyCourses" class="empty-state" hidden>دوره‌ای با این مشخصات پیدا نشد.</p>
+  </main>
+
+  <footer class="footer">© تمام حقوق برای NOVA محفوظ است.</footer>
+</body>
+</html>
